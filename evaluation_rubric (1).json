@@ -1,0 +1,84 @@
+{
+  "rubrics": [
+    {
+      "id": "R1",
+      "criterion": "The workflow reflects the dataset's stated domain and question types.",
+      "success_condition": "It addresses general technical/scientific factual questions, numerical problems, and multi-step reasoning.",
+      "failure_condition": "It omits these types or focuses on an unrelated/regulated domain.",
+      "human_rating": false,
+      "weight": 1
+    },
+    {
+      "id": "R2",
+      "criterion": "The workflow incorporates the stated size and team capacity.",
+      "success_condition": "It accounts for approximately 12,000 pairs, 3 reviewers, 6 hours per reviewer per week, and Python/Colab availability.",
+      "failure_condition": "It omits or contradicts material capacity constraints.",
+      "human_rating": false,
+      "weight": 1
+    },
+    {
+      "id": "R3",
+      "criterion": "The workflow prioritizes the major quality checks.",
+      "success_condition": "It orders structural checks, numerical verification, factual/scientific correctness, ambiguity, and reasoning integrity or provides a justified equivalent order.",
+      "failure_condition": "It gives no priorities or omits major stated risks.",
+      "human_rating": false,
+      "weight": 1
+    },
+    {
+      "id": "R4",
+      "criterion": "The workflow specifies pass, fail, and needs-human-review outcomes.",
+      "success_condition": "Major checks have operational criteria for pass, fail, and human review.",
+      "failure_condition": "Outcomes are absent or too vague to apply consistently.",
+      "human_rating": false,
+      "weight": 1
+    },
+    {
+      "id": "R5",
+      "criterion": "The workflow separates automated checks from human judgment.",
+      "success_condition": "It assigns format/schema checks to automation, numerical checks to validated automation/hybrid review, and factual/ambiguity/reasoning checks to human review where needed.",
+      "failure_condition": "It treats subjective checks as reliably fully automatable or fails to distinguish methods.",
+      "human_rating": true,
+      "weight": 1
+    },
+    {
+      "id": "R6",
+      "criterion": "The sampling and workload plan is internally consistent and feasible.",
+      "success_condition": "It reconciles sample percentages/counts with 18 reviewer-hours per week and labels estimates/assumptions clearly.",
+      "failure_condition": "It presents conflicting sampling plans or infeasible workload claims without explanation.",
+      "human_rating": true,
+      "weight": 1
+    },
+    {
+      "id": "R7",
+      "criterion": "The workflow defines escalation and disagreement resolution.",
+      "success_condition": "It gives an actionable second-review/team-resolution process and records decisions or recurring error patterns.",
+      "failure_condition": "It provides no usable dispute or escalation process.",
+      "human_rating": true,
+      "weight": 1
+    },
+    {
+      "id": "R8",
+      "criterion": "The workflow includes a practical reviewer checklist.",
+      "success_condition": "The checklist covers answer relevance, numerical/unit correctness, factual support, reasoning, and clarity.",
+      "failure_condition": "The checklist is missing or not actionable.",
+      "human_rating": true,
+      "weight": 1
+    },
+    {
+      "id": "R9",
+      "criterion": "The workflow states assumptions and limitations transparently.",
+      "success_condition": "It distinguishes proposed methods and estimates from verified implementation/results and notes human-review limitations.",
+      "failure_condition": "It claims validation/implementation not performed or hides material assumptions.",
+      "human_rating": true,
+      "weight": 1
+    },
+    {
+      "id": "R10",
+      "criterion": "The interaction asks relevant clarifying questions and stops when sufficient information is available.",
+      "success_condition": "It asks for material missing details, avoids redundant questions, and then produces a tailored workflow.",
+      "failure_condition": "It repeatedly asks already answered questions or produces a generic result despite material gaps.",
+      "human_rating": true,
+      "weight": 1
+    }
+  ]
+}
